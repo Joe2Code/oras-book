@@ -10,9 +10,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainView: UIView!
+    
+    @IBOutlet weak var loginView: UIView!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func login(sender: AnyObject) {
+    }
+    
+    @IBAction func googleLogin(sender: AnyObject) {
+    }
+    
+    @IBAction func facebookLogin(sender: AnyObject) {
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mainView.transform = CGAffineTransformMakeTranslation(0, 700)
+        UIView.animateWithDuration(1, delay: 0.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.2, options: [], animations: {
+            self.mainView.transform = CGAffineTransformMakeScale(1, 1)
+            }, completion: nil)
+        
+        loginView.transform = CGAffineTransformMakeTranslation(0, 700)
+        UIView.animateWithDuration(1, delay: 0.7, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.2, options: [], animations: {
+            self.loginView.transform = CGAffineTransformMakeScale(1, 1)
+            }, completion: nil)
+
     }
 
     override func didReceiveMemoryWarning() {

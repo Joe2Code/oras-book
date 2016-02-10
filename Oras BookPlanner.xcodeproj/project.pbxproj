@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C301C6961C604DC200B247F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301C6951C604DC200B247F6 /* Constants.swift */; };
+		C301C6981C60564B00B247F6 /* ShadowColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301C6971C60564B00B247F6 /* ShadowColors.swift */; };
+		C315384C1C697108007E7114 /* CardViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315384B1C697108007E7114 /* CardViewTableViewCell.swift */; };
 		C31854D81C5DAD3800C6EC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854D71C5DAD3800C6EC1F /* AppDelegate.swift */; };
 		C31854DA1C5DAD3800C6EC1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854D91C5DAD3800C6EC1F /* ViewController.swift */; };
 		C31854DD1C5DAD3800C6EC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31854DB1C5DAD3800C6EC1F /* Main.storyboard */; };
@@ -15,6 +18,8 @@
 		C31854E51C5DAD3800C6EC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31854E31C5DAD3800C6EC1F /* LaunchScreen.storyboard */; };
 		C31854F01C5DAD3800C6EC1F /* Oras_BookPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854EF1C5DAD3800C6EC1F /* Oras_BookPlannerTests.swift */; };
 		C31854FB1C5DAD3800C6EC1F /* Oras_BookPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854FA1C5DAD3800C6EC1F /* Oras_BookPlannerUITests.swift */; };
+		C3CD4CF91C64729600B12173 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD4CF81C64729600B12173 /* DummyData.swift */; };
+		C3DA619D1C62EA04001327CC /* MainBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA619C1C62EA04001327CC /* MainBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C301C6951C604DC200B247F6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C301C6971C60564B00B247F6 /* ShadowColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColors.swift; sourceTree = "<group>"; };
+		C315384B1C697108007E7114 /* CardViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewTableViewCell.swift; sourceTree = "<group>"; };
 		C31854D41C5DAD3800C6EC1F /* Oras BookPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oras BookPlanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31854D71C5DAD3800C6EC1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C31854D91C5DAD3800C6EC1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C31854D91C5DAD3800C6EC1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Oras BookPlanner/ViewController.swift"; sourceTree = "<group>"; };
 		C31854DC1C5DAD3800C6EC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C31854DF1C5DAD3800C6EC1F /* Oras_BookPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Oras_BookPlanner.xcdatamodel; sourceTree = "<group>"; };
 		C31854E11C5DAD3800C6EC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		C31854F61C5DAD3800C6EC1F /* Oras BookPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Oras BookPlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31854FA1C5DAD3800C6EC1F /* Oras_BookPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oras_BookPlannerUITests.swift; sourceTree = "<group>"; };
 		C31854FC1C5DAD3800C6EC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CD4CF81C64729600B12173 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		C3DA619C1C62EA04001327CC /* MainBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,10 @@
 		C31854CB1C5DAD3800C6EC1F = {
 			isa = PBXGroup;
 			children = (
+				C386266F1C5DB60E00B6AA3B /* Views */,
+				C386266E1C5DB60500B6AA3B /* Controller */,
+				C386266D1C5DB5FE00B6AA3B /* Model */,
+				C386266B1C5DB5EB00B6AA3B /* Resourses */,
 				C31854D61C5DAD3800C6EC1F /* Oras BookPlanner */,
 				C31854EE1C5DAD3800C6EC1F /* Oras BookPlannerTests */,
 				C31854F91C5DAD3800C6EC1F /* Oras BookPlannerUITests */,
@@ -100,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				C31854D71C5DAD3800C6EC1F /* AppDelegate.swift */,
-				C31854D91C5DAD3800C6EC1F /* ViewController.swift */,
 				C31854DB1C5DAD3800C6EC1F /* Main.storyboard */,
 				C31854E11C5DAD3800C6EC1F /* Assets.xcassets */,
 				C31854E31C5DAD3800C6EC1F /* LaunchScreen.storyboard */,
@@ -126,6 +139,40 @@
 				C31854FC1C5DAD3800C6EC1F /* Info.plist */,
 			);
 			path = "Oras BookPlannerUITests";
+			sourceTree = "<group>";
+		};
+		C386266B1C5DB5EB00B6AA3B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
+		C386266D1C5DB5FE00B6AA3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3CD4CF81C64729600B12173 /* DummyData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C386266E1C5DB60500B6AA3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C31854D91C5DAD3800C6EC1F /* ViewController.swift */,
+				C3DA619C1C62EA04001327CC /* MainBookViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C386266F1C5DB60E00B6AA3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C301C6951C604DC200B247F6 /* Constants.swift */,
+				C301C6971C60564B00B247F6 /* ShadowColors.swift */,
+				C315384B1C697108007E7114 /* CardViewTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +243,7 @@
 				TargetAttributes = {
 					C31854D31C5DAD3800C6EC1F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MZSYHSCZZ9;
 					};
 					C31854EA1C5DAD3800C6EC1F = {
 						CreatedOnToolsVersion = 7.2;
@@ -259,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C301C6981C60564B00B247F6 /* ShadowColors.swift in Sources */,
+				C301C6961C604DC200B247F6 /* Constants.swift in Sources */,
+				C3DA619D1C62EA04001327CC /* MainBookViewController.swift in Sources */,
+				C3CD4CF91C64729600B12173 /* DummyData.swift in Sources */,
 				C31854DA1C5DAD3800C6EC1F /* ViewController.swift in Sources */,
 				C31854E01C5DAD3800C6EC1F /* Oras_BookPlanner.xcdatamodeld in Sources */,
+				C315384C1C697108007E7114 /* CardViewTableViewCell.swift in Sources */,
 				C31854D81C5DAD3800C6EC1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,10 +456,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Oras BookPlanner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josephmennemeier.Oras-BookPlanner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +470,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Oras BookPlanner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josephmennemeier.Oras-BookPlanner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +547,7 @@
 				C31855011C5DAD3800C6EC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C31855021C5DAD3800C6EC1F /* Build configuration list for PBXNativeTarget "Oras BookPlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +556,7 @@
 				C31855041C5DAD3800C6EC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C31855051C5DAD3800C6EC1F /* Build configuration list for PBXNativeTarget "Oras BookPlannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +565,7 @@
 				C31855071C5DAD3800C6EC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
