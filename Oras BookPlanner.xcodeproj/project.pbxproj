@@ -18,6 +18,8 @@
 		C31854E51C5DAD3800C6EC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31854E31C5DAD3800C6EC1F /* LaunchScreen.storyboard */; };
 		C31854F01C5DAD3800C6EC1F /* Oras_BookPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854EF1C5DAD3800C6EC1F /* Oras_BookPlannerTests.swift */; };
 		C31854FB1C5DAD3800C6EC1F /* Oras_BookPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854FA1C5DAD3800C6EC1F /* Oras_BookPlannerUITests.swift */; };
+		C31E64BE1C6ADB5300BD2950 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E64BD1C6ADB5300BD2950 /* TimeLineTableViewController.swift */; };
+		C31E64C01C6ADB7800BD2950 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E64BF1C6ADB7800BD2950 /* TimeLineView.swift */; };
 		C3CD4CF91C64729600B12173 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD4CF81C64729600B12173 /* DummyData.swift */; };
 		C3DA619D1C62EA04001327CC /* MainBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA619C1C62EA04001327CC /* MainBookViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		C31854F61C5DAD3800C6EC1F /* Oras BookPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Oras BookPlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31854FA1C5DAD3800C6EC1F /* Oras_BookPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oras_BookPlannerUITests.swift; sourceTree = "<group>"; };
 		C31854FC1C5DAD3800C6EC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31E64BD1C6ADB5300BD2950 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		C31E64BF1C6ADB7800BD2950 /* TimeLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		C3CD4CF81C64729600B12173 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		C3DA619C1C62EA04001327CC /* MainBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +165,7 @@
 			children = (
 				C31854D91C5DAD3800C6EC1F /* ViewController.swift */,
 				C3DA619C1C62EA04001327CC /* MainBookViewController.swift */,
+				C31E64BD1C6ADB5300BD2950 /* TimeLineTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				C301C6951C604DC200B247F6 /* Constants.swift */,
 				C301C6971C60564B00B247F6 /* ShadowColors.swift */,
 				C315384B1C697108007E7114 /* CardViewTableViewCell.swift */,
+				C31E64BF1C6ADB7800BD2950 /* TimeLineView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -312,9 +318,11 @@
 				C3DA619D1C62EA04001327CC /* MainBookViewController.swift in Sources */,
 				C3CD4CF91C64729600B12173 /* DummyData.swift in Sources */,
 				C31854DA1C5DAD3800C6EC1F /* ViewController.swift in Sources */,
+				C31E64BE1C6ADB5300BD2950 /* TimeLineTableViewController.swift in Sources */,
 				C31854E01C5DAD3800C6EC1F /* Oras_BookPlanner.xcdatamodeld in Sources */,
 				C315384C1C697108007E7114 /* CardViewTableViewCell.swift in Sources */,
 				C31854D81C5DAD3800C6EC1F /* AppDelegate.swift in Sources */,
+				C31E64C01C6ADB7800BD2950 /* TimeLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

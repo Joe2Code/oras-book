@@ -8,29 +8,25 @@
 
 import UIKit
 
+func secondsToTime (seconds: Int) -> (Int, Int, Int) {
+    return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
+}
+
 struct DummyData {
     var bookTitle: String?
-    var dateLastEntry: Int
-    var timeLastEntry: Int
-    var entryNumber: Int
-    var timeReadingTotal: Int
-    var pagesRead: Int
-    var notesNumber: Int
+    var noteNumber: Int?
+    var totalTimeRead = secondsToTime
     
-    init(bookTitle: String?, dateLastEntry: Int, timeLastEntry: Int, entryNumber: Int, timeReadingTotal: Int, pagesRead: Int, notesNumber: Int) {
+    init(bookTitle: String?, noteNumber: Int?, totalTimeRead: Int?) {
         self.bookTitle = bookTitle
-        self.dateLastEntry = dateLastEntry
-        self.timeLastEntry = timeLastEntry
-        self.entryNumber = entryNumber
-        self.timeReadingTotal = timeReadingTotal
-        self.pagesRead = pagesRead
-        self.notesNumber = notesNumber
+        self.noteNumber = noteNumber
+        self.totalTimeRead = secondsToTime
     }
     
 }
 
 let sampleData = [
-    DummyData(bookTitle: "Lord of the Rings", dateLastEntry: 10, timeLastEntry: 19, entryNumber: 2, timeReadingTotal: 15, pagesRead: 3, notesNumber: 2),
-    DummyData(bookTitle: "Mere Christianity", dateLastEntry: 20, timeLastEntry: 3, entryNumber: 17, timeReadingTotal: 28, pagesRead: 45, notesNumber: 8)
-
+    DummyData(bookTitle: "Lord of the Rings", noteNumber: 5, totalTimeRead: 7000),
+    DummyData(bookTitle: "Mere Christianity", noteNumber: 7, totalTimeRead: 2390),
+    DummyData(bookTitle: "A Tale of Two Cities", noteNumber: 3, totalTimeRead: 29003)
 ]
