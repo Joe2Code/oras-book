@@ -22,6 +22,8 @@
 		C31E64C01C6ADB7800BD2950 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E64BF1C6ADB7800BD2950 /* TimeLineView.swift */; };
 		C3CD4CF91C64729600B12173 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD4CF81C64729600B12173 /* DummyData.swift */; };
 		C3DA619D1C62EA04001327CC /* MainBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA619C1C62EA04001327CC /* MainBookViewController.swift */; };
+		C3DFB9271C6C3E2200E5C065 /* BookActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFB9261C6C3E2200E5C065 /* BookActivityTableViewCell.swift */; };
+		C3DFB9291C6C3E4B00E5C065 /* BookActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFB9281C6C3E4B00E5C065 /* BookActivityTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		C31E64BF1C6ADB7800BD2950 /* TimeLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		C3CD4CF81C64729600B12173 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		C3DA619C1C62EA04001327CC /* MainBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBookViewController.swift; sourceTree = "<group>"; };
+		C3DFB9261C6C3E2200E5C065 /* BookActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookActivityTableViewCell.swift; sourceTree = "<group>"; };
+		C3DFB9281C6C3E4B00E5C065 /* BookActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookActivityTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 				C31854D91C5DAD3800C6EC1F /* ViewController.swift */,
 				C3DA619C1C62EA04001327CC /* MainBookViewController.swift */,
 				C31E64BD1C6ADB5300BD2950 /* TimeLineTableViewController.swift */,
+				C3DFB9281C6C3E4B00E5C065 /* BookActivityTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				C301C6971C60564B00B247F6 /* ShadowColors.swift */,
 				C315384B1C697108007E7114 /* CardViewTableViewCell.swift */,
 				C31E64BF1C6ADB7800BD2950 /* TimeLineView.swift */,
+				C3DFB9261C6C3E2200E5C065 /* BookActivityTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -314,11 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C301C6981C60564B00B247F6 /* ShadowColors.swift in Sources */,
+				C3DFB9271C6C3E2200E5C065 /* BookActivityTableViewCell.swift in Sources */,
 				C301C6961C604DC200B247F6 /* Constants.swift in Sources */,
 				C3DA619D1C62EA04001327CC /* MainBookViewController.swift in Sources */,
 				C3CD4CF91C64729600B12173 /* DummyData.swift in Sources */,
 				C31854DA1C5DAD3800C6EC1F /* ViewController.swift in Sources */,
 				C31E64BE1C6ADB5300BD2950 /* TimeLineTableViewController.swift in Sources */,
+				C3DFB9291C6C3E4B00E5C065 /* BookActivityTableViewController.swift in Sources */,
 				C31854E01C5DAD3800C6EC1F /* Oras_BookPlanner.xcdatamodeld in Sources */,
 				C315384C1C697108007E7114 /* CardViewTableViewCell.swift in Sources */,
 				C31854D81C5DAD3800C6EC1F /* AppDelegate.swift in Sources */,
