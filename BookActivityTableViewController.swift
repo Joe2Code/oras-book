@@ -10,7 +10,7 @@ import UIKit
 
 class BookActivityTableViewController: UITableViewController {
 
-    @IBOutlet var bookActivityTableView: UITableView!
+    @IBOutlet var activityTableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -32,18 +32,25 @@ class BookActivityTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 1 // activityCell return 3, noteCell return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3 // activityCell return 1, noteCell return noteCell.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("bookActivity", forIndexPath: indexPath)
-
-        return cell
+        
+        let index = indexPath.row
+        
+        if index == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("activityCell", forIndexPath: indexPath)
+            return cell
+        } else {
+            let secondCell = tableView.dequeueReusableCellWithIdentifier("noteCell", forIndexPath: indexPath)
+            return secondCell
+        }
     }
 
     /*
