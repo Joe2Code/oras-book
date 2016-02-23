@@ -317,19 +317,19 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Book Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg4-66-hge">
                                                             <rect key="frame" x="8" y="8" width="552" height="26"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="# of Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3G-hk-nE6">
                                                             <rect key="frame" x="8" y="121" width="98" height="24"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="044-2X-oDs">
                                                             <rect key="frame" x="462" y="121" width="98" height="24"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKx-7B-bii">
@@ -425,91 +425,54 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dT-6W-n3L" customClass="ShadowClass" customModule="Oras_BookPlanner" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="584" height="98"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Time Read" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbu-5U-h5E">
-                                                    <rect key="frame" x="13" y="8" width="152" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.20499894425675674" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWp-u8-Ymb">
-                                                    <rect key="frame" x="173" y="8" width="403" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.20499894430000001" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK2-3S-arb">
-                                                    <rect key="frame" x="13" y="46" width="182" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.20499894430000001" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8w-rl-jw6">
-                                                    <rect key="frame" x="394" y="46" width="182" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.20499894430000001" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIT-Ww-QzG">
-                                                    <rect key="frame" x="201" y="46" width="183" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.20499894430000001" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-Ts-OpQ">
-                                                    <rect key="frame" x="13" y="77" width="182" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c92-JV-8Lf">
-                                                    <rect key="frame" x="201" y="77" width="183" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eno-eI-UFj">
-                                                    <rect key="frame" x="394" y="77" width="182" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-qc-rNq">
+                                                    <rect key="frame" x="8" y="8" width="280" height="30"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbf-O1-7Kd">
+                                                    <rect key="frame" x="296" y="8" width="280" height="30"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4E-48-Oft">
+                                                    <rect key="frame" x="8" y="46" width="189" height="44"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxk-Mc-oBx">
+                                                    <rect key="frame" x="387" y="46" width="189" height="44"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0w-00-dFd">
+                                                    <rect key="frame" x="206" y="46" width="173" height="44"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="98" id="Ii0-Vu-6us"/>
-                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.3026288006756756" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="7dT-6W-n3L" secondAttribute="trailing" constant="8" id="IEQ-Q4-RT5"/>
-                                        <constraint firstItem="7dT-6W-n3L" firstAttribute="centerX" secondItem="5sf-8E-02S" secondAttribute="centerX" id="Klx-zS-pzN"/>
-                                        <constraint firstItem="7dT-6W-n3L" firstAttribute="top" secondItem="5sf-8E-02S" secondAttribute="top" constant="8" id="Uoq-J1-LzG"/>
-                                        <constraint firstItem="7dT-6W-n3L" firstAttribute="leading" secondItem="5sf-8E-02S" secondAttribute="leading" constant="8" id="YWT-LP-N3K"/>
-                                        <constraint firstAttribute="bottom" secondItem="7dT-6W-n3L" secondAttribute="bottom" constant="8" id="psD-ST-qKQ"/>
+                                        <constraint firstItem="7dT-6W-n3L" firstAttribute="leading" secondItem="5sf-8E-02S" secondAttribute="leading" constant="8" id="BIV-Oa-dOo"/>
+                                        <constraint firstAttribute="bottom" secondItem="7dT-6W-n3L" secondAttribute="bottom" constant="8" id="IZB-xR-qL9"/>
+                                        <constraint firstAttribute="trailing" secondItem="7dT-6W-n3L" secondAttribute="trailing" constant="8" id="hha-9x-uIW"/>
+                                        <constraint firstItem="7dT-6W-n3L" firstAttribute="top" secondItem="5sf-8E-02S" secondAttribute="top" constant="8" id="xar-UL-Kfm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="222" id="ksX-8i-iLf">
-                                <rect key="frame" x="0.0" y="207" width="600" height="222"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="225" id="ksX-8i-iLf">
+                                <rect key="frame" x="0.0" y="207" width="600" height="225"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ksX-8i-iLf" id="0f1-FZ-oXb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="221"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emU-cM-cdC" customClass="ShadowWhite" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emU-cM-cdC" customClass="ShadowWhite" customModule="Oras_BookPlanner" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="584" height="207"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entry Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8V-6y-O3A">
                                                     <rect key="frame" x="8" y="8" width="500" height="30"/>
                                                     <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Rt-iL-gPa">
@@ -522,19 +485,19 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1E-uc-weH">
                                                     <rect key="frame" x="8" y="187" width="44" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw2-LH-bBr">
                                                     <rect key="frame" x="553" y="187" width="23" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gG-Hn-28a">
                                                     <rect key="frame" x="54" y="187" width="50" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUI-QU-Ewd">
@@ -544,20 +507,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pages Read" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eu-n1-Zqx">
                                                     <rect key="frame" x="474" y="187" width="76" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="emU-cM-cdC" firstAttribute="top" secondItem="0f1-FZ-oXb" secondAttribute="top" constant="8" id="Hg5-aa-oRh"/>
-                                        <constraint firstAttribute="trailing" secondItem="emU-cM-cdC" secondAttribute="trailing" constant="8" id="IYd-eA-QEC"/>
-                                        <constraint firstAttribute="bottom" secondItem="emU-cM-cdC" secondAttribute="bottom" constant="8" id="a3K-2Y-qQE"/>
-                                        <constraint firstItem="emU-cM-cdC" firstAttribute="leading" secondItem="0f1-FZ-oXb" secondAttribute="leading" constant="8" id="eJc-5S-xr2"/>
-                                        <constraint firstItem="emU-cM-cdC" firstAttribute="centerX" secondItem="0f1-FZ-oXb" secondAttribute="centerX" id="pYe-iz-q5S"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
