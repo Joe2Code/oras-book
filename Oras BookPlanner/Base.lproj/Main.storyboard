@@ -422,34 +422,88 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dT-6W-n3L" customClass="ShadowClass" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dT-6W-n3L">
                                             <rect key="frame" x="8" y="8" width="584" height="98"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-qc-rNq">
-                                                    <rect key="frame" x="8" y="8" width="280" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbf-O1-7Kd">
-                                                    <rect key="frame" x="296" y="8" width="280" height="30"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4E-48-Oft">
-                                                    <rect key="frame" x="8" y="46" width="189" height="44"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxk-Mc-oBx">
-                                                    <rect key="frame" x="387" y="46" width="189" height="44"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0w-00-dFd">
-                                                    <rect key="frame" x="206" y="46" width="173" height="44"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GoK-TG-ZAE">
+                                                    <rect key="frame" x="8" y="8" width="568" height="82"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C22-Zl-S4u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="184" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes/Log %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opL-W7-ZgG" customClass="ShadowGreenLabel" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="r7t-IT-i96"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000/000 000%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tng-FD-v1Z" customClass="ShadowLabel" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28" width="184" height="54"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                                    <color key="textColor" red="0.14901960780000001" green="0.77647058820000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jVW-Ze-46e">
+                                                            <rect key="frame" x="192" y="0.0" width="184" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVk-Pr-xbe" customClass="ShadowGreenLabel" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="ZAq-GU-Yiv"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000 Hours 00 Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHM-Yl-1DC" customClass="ShadowLabel" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28" width="184" height="54"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                                    <color key="textColor" red="0.14901960780000001" green="0.77647058820000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-6n-NQT">
+                                                            <rect key="frame" x="384" y="0.0" width="184" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages Read" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1F-Gr-Uxs" customClass="ShadowGreenLabel" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="FS7-F2-mhz"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMu-Zw-QCb" customClass="ShadowLabel" customModule="Oras_BookPlanner" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28" width="184" height="54"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                                    <color key="textColor" red="0.14901960780000001" green="0.77647058820000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.69803921570000005" green="0.92156862750000001" blue="0.94901960780000005" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="GoK-TG-ZAE" firstAttribute="top" secondItem="7dT-6W-n3L" secondAttribute="top" constant="8" id="akr-8i-8lM"/>
+                                                <constraint firstItem="GoK-TG-ZAE" firstAttribute="leading" secondItem="7dT-6W-n3L" secondAttribute="leading" constant="8" id="bA0-KI-lNG"/>
+                                                <constraint firstAttribute="bottom" secondItem="GoK-TG-ZAE" secondAttribute="bottom" constant="8" id="dGj-Kx-sFE"/>
+                                                <constraint firstAttribute="trailing" secondItem="GoK-TG-ZAE" secondAttribute="trailing" constant="8" id="lN8-bg-0uM"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.3026288006756756" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="7dT-6W-n3L" firstAttribute="leading" secondItem="5sf-8E-02S" secondAttribute="leading" constant="8" id="BIV-Oa-dOo"/>
                                         <constraint firstAttribute="bottom" secondItem="7dT-6W-n3L" secondAttribute="bottom" constant="8" id="IZB-xR-qL9"/>
