@@ -11,10 +11,11 @@ import UIKit
 class BookActivityTableViewController: UITableViewController {
 
     @IBOutlet var activityTableView: UITableView!
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityTableView.delegate = self
+        activityTableView.dataSource = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -37,18 +38,22 @@ class BookActivityTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3 // activityCell return 1, noteCell return noteCell.count
+        return 6 // activityCell return 1, noteCell return noteCell.count
     }
-
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let index = indexPath.row
         
         if index == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("activityCell", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("activityCell", forIndexPath: indexPath) as! ActivityTableViewCell
+            self.activityTableView.rowHeight = 240.0
+            cell.userInteractionEnabled = false
             return cell
         } else {
-            let secondCell = tableView.dequeueReusableCellWithIdentifier("noteCell", forIndexPath: indexPath)
+            let secondCell = tableView.dequeueReusableCellWithIdentifier("noteCell", forIndexPath: indexPath) as! NoteCellTableViewCell
+            self.activityTableView.rowHeight = 72.0
+            
             return secondCell
         }
     }

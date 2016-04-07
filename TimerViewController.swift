@@ -8,44 +8,112 @@
 
 import UIKit
 
-class TimerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet weak var timerView: UITableView!
+class TimerViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var playCounter = 0
+    var stopCounter = 0
+    var running = false
+    
+    var timer = NSTimer()
+    var seconds = 0
+    var count = 0
+    
 
-        // Do any additional setup after loading the view.
+    // IBOutlets
+    // Timer Label Outlets
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var minuteLabel: UILabel!
+    @IBOutlet weak var secondsLabel: UILabel!
+    @IBOutlet weak var buttonTogggleFifteenAdd: UIButton!
+    @IBOutlet weak var buttonToggleThirtyEdit: UIButton!
+    
+    @IBOutlet weak var stopResetButton: RoundedCornerButton!
+    @IBOutlet weak var startSaveButton: RoundedCornerButton!
+    
+    @IBAction func categorySelect(sender: AnyObject) {
+    }
+    @IBOutlet weak var saveTime: UIBarButtonItem!
+    
+    func alterButtons() {
+            buttonTogggleFifteenAdd.setTitle("Add New\r Note", forState: .Normal)
+            buttonTogggleFifteenAdd.titleLabel?.textAlignment = NSTextAlignment.Center
+            buttonToggleThirtyEdit.setTitle("Edit\r Note", forState: .Normal)
+            buttonToggleThirtyEdit.titleLabel?.textAlignment = NSTextAlignment.Center
     }
 
+    func revertButtons() {
+            buttonTogggleFifteenAdd.setTitle("+15", forState: .Normal)
+            buttonToggleThirtyEdit.setTitle("+30", forState: .Normal)
+        }
+    
+    func secondsAddFifteen() {
+        seconds+15
+    }
+    
+    func secondsAddThirty() {
+        seconds+30
+    }
+    
+    func startTimer() {
+        seconds++
+        if seconds < 10 {
+            secondsLabel.text = "0\(seconds)"
+        } else {
+            secondsLabel.text = "\(seconds)"
+        }
+    }
+    
+    func play() {
+        self.startSaveButton.setTitle("Pause", forState: .Normal)
+        UIButton.animateWithDuration(1.5,
+            delay: 0,
+            options: UIViewAnimationOptions.CurveLinear,
+            animations: {
+                self.stopResetButton.alpha = 1
+            }, completion: nil)
+        timer.invalidate()
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "startTimer", userInfo: nil, repeats: true)
+        startTimer()
+        return
+    }
+    
+    func pause() {
+        if playCounter == 1 {
+            startSaveButton.setTitle("Play", forState: .Normal)
+            playCounter == 0
+        }
+    }
+    
+    func stopTimer() {
+        timer.invalidate()
+        /*    UIButton.animateWithDuration(0.6, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: .CurveLinear , animations: {
+                self.stopResetButton.center.y += 100
+                }, completion: nil)
+*/
+            stopResetButton.setTitle("Reset", forState: .Normal)
+        return alterButtons()
+        
+        }
+    
+    func resetTimer() {
+        if stopResetButton.titleLabel == "Reset" {
+            seconds = 0
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        stopResetButton.alpha = 0
+        startSaveButton.addTarget(self, action: "play", forControlEvents: .TouchUpInside)
+        startSaveButton.addTarget(self, action: "pause", forControlEvents: .TouchUpInside)
+        stopResetButton.addTarget(self, action: "stopTimer", forControlEvents: .TouchUpInside)
+        stopResetButton.addTarget(self, action: "resetTimer", forControlEvents: .TouchUpInside)
+        buttonTogggleFifteenAdd.addTarget(self, action: "secondsAddFifteen", forControlEvents: .TouchUpInside)
+     
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("timerCell", forIndexPath: indexPath)
-        
-        return cell
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
