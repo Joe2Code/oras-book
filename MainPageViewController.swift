@@ -11,10 +11,8 @@ import UIKit
 class MainPageViewController: UIViewController {
     
     @IBOutlet weak var featuresView: UIView!
-    @IBAction func startReadingButton(sender: AnyObject) {
-    }
     
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         featuresView.transform = CGAffineTransformMakeTranslation(0, 700)

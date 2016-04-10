@@ -17,96 +17,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotebooksPictureOras.png" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-xz-4M5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNO-rc-4ae" customClass="RoundedCorners" customModule="Oras_BookPlanner" customModuleProvider="target">
                                 <rect key="frame" x="20" y="185" width="560" height="309"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8aB-Y9-MUi">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o6n-Zu-VM9">
                                         <rect key="frame" x="8" y="8" width="544" height="293"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Keep track of the books you read by how many pages and by length of time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAg-yM-jVu">
-                                                <rect key="frame" x="0.0" y="0.0" width="544" height="98"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Categorize your books with themes like casual reading, academic, or family" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R7-Aa-4Q6">
-                                                <rect key="frame" x="0.0" y="98" width="544" height="97"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Take notes every time you read and keep them seperated so you know exactly what you wrote down and when" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKU-La-Ygr">
-                                                <rect key="frame" x="0.0" y="195" width="544" height="98"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwR-Rf-nDU">
+                                                <rect key="frame" x="0.0" y="0.0" width="544" height="67"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Go To Book List">
+                                                    <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="DBB-ZZ-rli" kind="show" id="hnv-fG-UoC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-B7-lza">
+                                                <rect key="frame" x="0.0" y="75" width="544" height="68"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Go to Quick Timer">
+                                                    <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-IM-wdH">
+                                                <rect key="frame" x="0.0" y="151" width="544" height="67"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Continue Reading: Last Book Read">
+                                                    <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-CL-jg3">
+                                                <rect key="frame" x="0.0" y="226" width="544" height="67"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Continue Reading: Second to Last Book">
+                                                    <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="8aB-Y9-MUi" secondAttribute="bottom" constant="8" id="6Dl-qV-0Qx"/>
-                                    <constraint firstItem="8aB-Y9-MUi" firstAttribute="top" secondItem="GNO-rc-4ae" secondAttribute="top" constant="8" id="B2n-uI-cMX"/>
-                                    <constraint firstItem="8aB-Y9-MUi" firstAttribute="leading" secondItem="GNO-rc-4ae" secondAttribute="leading" constant="8" id="EFt-Hs-ooV"/>
-                                    <constraint firstAttribute="trailing" secondItem="8aB-Y9-MUi" secondAttribute="trailing" constant="8" id="pDg-p2-Y1K"/>
+                                    <constraint firstItem="o6n-Zu-VM9" firstAttribute="top" secondItem="GNO-rc-4ae" secondAttribute="top" constant="8" id="7qV-3O-1dN"/>
+                                    <constraint firstItem="o6n-Zu-VM9" firstAttribute="leading" secondItem="GNO-rc-4ae" secondAttribute="leading" constant="8" id="Ces-UE-hvf"/>
+                                    <constraint firstAttribute="trailing" secondItem="o6n-Zu-VM9" secondAttribute="trailing" constant="8" id="Zmc-Dr-Fr4"/>
+                                    <constraint firstAttribute="bottom" secondItem="o6n-Zu-VM9" secondAttribute="bottom" constant="8" id="wfb-al-EoH"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCJ-vI-OfW">
-                                <rect key="frame" x="243" y="60" width="115" height="52"/>
+                                <rect key="frame" x="243" y="28" width="115" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="9Xm-UL-rVZ"/>
-                                    <constraint firstAttribute="height" constant="52" id="IH8-1z-MMq"/>
+                                    <constraint firstAttribute="width" constant="115" id="3dB-XW-k06"/>
+                                    <constraint firstAttribute="height" constant="52" id="VdV-HQ-AgS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Book Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvZ-bU-2e2">
-                                <rect key="frame" x="212" y="116" width="177" height="29"/>
+                                <rect key="frame" x="212" y="80" width="177" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="aW3-KR-pPT"/>
-                                    <constraint firstAttribute="width" constant="177" id="jp9-n3-BPC"/>
+                                    <constraint firstAttribute="width" constant="177" id="IrU-VG-U2l"/>
+                                    <constraint firstAttribute="height" constant="29" id="f7I-Bk-tov"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRg-Tg-jEc" customClass="SpringBorderButton" customModule="Oras_BookPlanner" customModuleProvider="target">
-                                <rect key="frame" x="225" y="514" width="151" height="46"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="BO1-Oe-FVB"/>
-                                    <constraint firstAttribute="width" constant="151" id="fm2-f5-NXm"/>
-                                </constraints>
-                                <state key="normal" title="Start Reading!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startReadingButton:" destination="nGU-YJ-tcW" eventType="touchUpInside" id="BWo-Du-BdZ"/>
-                                    <segue destination="DBB-ZZ-rli" kind="show" id="z3j-C0-o9W"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xCJ-vI-OfW" firstAttribute="top" secondItem="YPy-a2-Wzz" secondAttribute="bottom" constant="40" id="4Lq-oP-aWe"/>
-                            <constraint firstItem="GNO-rc-4ae" firstAttribute="top" secondItem="lvZ-bU-2e2" secondAttribute="bottom" constant="40" id="6Lq-AI-MDe"/>
-                            <constraint firstItem="iKW-xz-4M5" firstAttribute="top" secondItem="Qhd-E8-X5I" secondAttribute="top" id="IT7-JN-E9H"/>
-                            <constraint firstItem="xCJ-vI-OfW" firstAttribute="centerX" secondItem="Qhd-E8-X5I" secondAttribute="centerX" id="InV-8W-dx3"/>
-                            <constraint firstItem="lvZ-bU-2e2" firstAttribute="top" secondItem="xCJ-vI-OfW" secondAttribute="bottom" constant="4" id="OtE-Wp-Bxm"/>
-                            <constraint firstAttribute="trailing" secondItem="iKW-xz-4M5" secondAttribute="trailing" id="Oxo-ju-P22"/>
-                            <constraint firstItem="HRg-Tg-jEc" firstAttribute="top" secondItem="GNO-rc-4ae" secondAttribute="bottom" constant="20" id="ZoK-Hr-TD0"/>
-                            <constraint firstItem="iKW-xz-4M5" firstAttribute="leading" secondItem="Qhd-E8-X5I" secondAttribute="leading" id="b40-dl-K57"/>
-                            <constraint firstItem="ipn-6Y-be0" firstAttribute="top" secondItem="HRg-Tg-jEc" secondAttribute="bottom" constant="40" id="nIv-rF-Cdh"/>
-                            <constraint firstItem="lvZ-bU-2e2" firstAttribute="centerX" secondItem="Qhd-E8-X5I" secondAttribute="centerX" id="nO1-o3-kUW"/>
-                            <constraint firstItem="GNO-rc-4ae" firstAttribute="leading" secondItem="Qhd-E8-X5I" secondAttribute="leading" constant="20" id="qeJ-aX-GBe"/>
-                            <constraint firstAttribute="trailing" secondItem="GNO-rc-4ae" secondAttribute="trailing" constant="20" id="rKR-cJ-eYt"/>
-                            <constraint firstItem="ipn-6Y-be0" firstAttribute="top" secondItem="iKW-xz-4M5" secondAttribute="bottom" id="vXk-UZ-7AJ"/>
-                            <constraint firstItem="HRg-Tg-jEc" firstAttribute="centerX" secondItem="Qhd-E8-X5I" secondAttribute="centerX" id="xGW-9x-3Ov"/>
+                            <constraint firstItem="ipn-6Y-be0" firstAttribute="top" secondItem="GNO-rc-4ae" secondAttribute="bottom" constant="106" id="0G0-jr-gm5"/>
+                            <constraint firstItem="xCJ-vI-OfW" firstAttribute="top" secondItem="YPy-a2-Wzz" secondAttribute="bottom" constant="8" id="21h-1U-sQ2"/>
+                            <constraint firstAttribute="trailing" secondItem="GNO-rc-4ae" secondAttribute="trailing" constant="20" id="BFe-MB-5E3"/>
+                            <constraint firstItem="GNO-rc-4ae" firstAttribute="leading" secondItem="Qhd-E8-X5I" secondAttribute="leading" constant="20" id="CT8-gd-oav"/>
+                            <constraint firstItem="lvZ-bU-2e2" firstAttribute="top" secondItem="xCJ-vI-OfW" secondAttribute="bottom" id="SCL-Ha-ytn"/>
+                            <constraint firstItem="lvZ-bU-2e2" firstAttribute="centerX" secondItem="Qhd-E8-X5I" secondAttribute="centerX" id="Xr8-MZ-AqB"/>
+                            <constraint firstItem="GNO-rc-4ae" firstAttribute="top" secondItem="lvZ-bU-2e2" secondAttribute="bottom" constant="76" id="p5K-6S-PQj"/>
+                            <constraint firstItem="xCJ-vI-OfW" firstAttribute="centerX" secondItem="Qhd-E8-X5I" secondAttribute="centerX" id="vy3-Zb-chn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -115,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfu-Jt-iCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="337"/>
+            <point key="canvasLocation" x="252" y="337"/>
         </scene>
         <!--Timer-->
         <scene sceneID="eGf-7j-Kpu">
@@ -265,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K95-nZ-pKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="1958"/>
+            <point key="canvasLocation" x="986" y="1937"/>
         </scene>
         <!--Books-->
         <scene sceneID="cgu-jX-0PV">
@@ -398,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8f-xc-HRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1340" y="1958"/>
+            <point key="canvasLocation" x="-460" y="1937"/>
         </scene>
         <!--New Book-->
         <scene sceneID="L2z-Us-35H">
@@ -629,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnS-f6-qxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609" y="1958"/>
+            <point key="canvasLocation" x="252" y="1937"/>
         </scene>
         <!--Activity-->
         <scene sceneID="1aN-Xv-V9Q">
@@ -938,7 +927,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8a-bM-MAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1340" y="2682"/>
+            <point key="canvasLocation" x="-460" y="2682"/>
         </scene>
         <!--Add Note-->
         <scene sceneID="hQo-5f-eGc">
@@ -1038,7 +1027,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0U-D2-dnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609" y="2682"/>
+            <point key="canvasLocation" x="252" y="2682"/>
         </scene>
         <!--Note View Controller-->
         <scene sceneID="mRd-ym-oYY">
@@ -1100,7 +1089,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWz-d9-wDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1658" y="3462"/>
+            <point key="canvasLocation" x="-466" y="3462"/>
         </scene>
         <!--Settings-->
         <scene sceneID="r9b-YP-IEE">
@@ -1277,7 +1266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMs-yj-qNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1000" y="3462"/>
+            <point key="canvasLocation" x="252" y="3462"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kVg-gL-cMs">
@@ -1291,7 +1280,6 @@
                     <connections>
                         <segue destination="Jyr-8A-pez" kind="relationship" relationship="viewControllers" id="ee0-dp-CGG"/>
                         <segue destination="8KF-zj-7lu" kind="relationship" relationship="viewControllers" id="WAw-Nz-vgK"/>
-                        <segue destination="oHd-J6-zpr" kind="relationship" relationship="viewControllers" id="lIA-E8-kRD"/>
                         <segue destination="yXs-uo-xbW" kind="relationship" relationship="viewControllers" id="MvL-g7-mp1"/>
                     </connections>
                 </tabBarController>
@@ -1316,7 +1304,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTr-KC-6lZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1340" y="1240"/>
+            <point key="canvasLocation" x="-460" y="1197"/>
         </scene>
         <!--Add New-->
         <scene sceneID="S2O-mm-PKr">
@@ -1335,23 +1323,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxG-GH-Js0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="1240"/>
-        </scene>
-        <!--Progress-->
-        <scene sceneID="Tvg-nU-fyf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oHd-J6-zpr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Progress" id="rPb-xA-LcQ"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fOr-hf-NWD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zXG-k5-Bfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1412" y="1240"/>
+            <point key="canvasLocation" x="986" y="1197"/>
         </scene>
         <!--Settings-->
         <scene sceneID="teK-YO-hy4">
@@ -1367,10 +1339,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OA8-tf-MkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="1240"/>
+            <point key="canvasLocation" x="1679" y="1197"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="NotebooksPictureOras.png" width="6072" height="4072"/>
-    </resources>
 </document>

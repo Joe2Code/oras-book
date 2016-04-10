@@ -47,11 +47,11 @@ class TimerViewController: UIViewController {
         }
     
     func secondsAddFifteen() {
-        seconds+15
+        seconds += 15
     }
     
     func secondsAddThirty() {
-        seconds+30
+        seconds += 30
     }
     
     func startTimer() {
@@ -98,6 +98,7 @@ class TimerViewController: UIViewController {
     func resetTimer() {
         if stopResetButton.titleLabel == "Reset" {
             seconds = 0
+            startSaveButton.setTitle("Play", forState: .Normal)
         }
     }
 
