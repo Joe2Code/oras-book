@@ -10,7 +10,10 @@ import UIKit
 
 class AddNoteViewController: UIViewController {
 
-    @IBOutlet weak var startDoneToggle: UIBarButtonItem!
+    
+    @IBAction func startBarButtonItem(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBOutlet weak var recordTimeSwitch: UISwitch!
     

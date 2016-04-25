@@ -32,7 +32,13 @@ class TimerViewController: UIViewController {
     
     @IBAction func categorySelect(sender: AnyObject) {
     }
-    @IBOutlet weak var saveTime: UIBarButtonItem!
+    
+    @IBAction func saveTime(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func unwindStartNoteToVC(segue: UIStoryboardSegue) {
+    }
     
     func alterButtons() {
             buttonTogggleFifteenAdd.setTitle("Add New\r Note", forState: .Normal)

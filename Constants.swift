@@ -22,6 +22,10 @@ func orasGreenColor() -> UIColor {
     return UIColor(red: 38.0 / 255.0, green: 198.0 / 255.0, blue: 218.0 / 255.0, alpha: 1.0)
 }
 
+func lightGrey() -> UIColor {
+    return UIColor(red: 236.0 / 255.0, green: 239.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
+}
+
 /* class RoundView:UIView {
     override func awakeFromNib() {
         self.layer.cornerRadius = 6

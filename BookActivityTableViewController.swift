@@ -11,6 +11,18 @@ import UIKit
 class BookActivityTableViewController: UITableViewController {
 
     @IBOutlet var activityTableView: UITableView!
+    
+    @IBAction func unwindAddNoteToVC(segue: UIStoryboardSegue) {
+    }
+    @IBAction func unwindSettingsToVC(segue: UIStoryboardSegue) {
+    }
+    
+    @IBAction func unwindNoteToVC(segue: UIStoryboardSegue) {
+    }
+    @IBAction func unwindTimerSave(segue: UIStoryboardSegue) {
+        
+    }
+
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +50,7 @@ class BookActivityTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6 // activityCell return 1, noteCell return noteCell.count
+        return 3 // activityCell return 1, noteCell return noteCell.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

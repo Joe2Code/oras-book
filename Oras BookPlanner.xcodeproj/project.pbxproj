@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C301C6961C604DC200B247F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301C6951C604DC200B247F6 /* Constants.swift */; };
 		C301C6981C60564B00B247F6 /* ShadowColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301C6971C60564B00B247F6 /* ShadowColors.swift */; };
+		C30404DB1CBDD41400BF4F3E /* MainPageButtonEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30404DA1CBDD41400BF4F3E /* MainPageButtonEffects.swift */; };
+		C30AFE0C1CC727C70066C5A0 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30AFE0B1CC727C70066C5A0 /* BookData.swift */; };
 		C31854D81C5DAD3800C6EC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31854D71C5DAD3800C6EC1F /* AppDelegate.swift */; };
 		C31854DD1C5DAD3800C6EC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31854DB1C5DAD3800C6EC1F /* Main.storyboard */; };
 		C31854E01C5DAD3800C6EC1F /* Oras_BookPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31854DE1C5DAD3800C6EC1F /* Oras_BookPlanner.xcdatamodeld */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		C301C6951C604DC200B247F6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C301C6971C60564B00B247F6 /* ShadowColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColors.swift; sourceTree = "<group>"; };
+		C30404DA1CBDD41400BF4F3E /* MainPageButtonEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageButtonEffects.swift; sourceTree = "<group>"; };
+		C30AFE0B1CC727C70066C5A0 /* BookData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 		C31854D41C5DAD3800C6EC1F /* Oras BookPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oras BookPlanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31854D71C5DAD3800C6EC1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C31854DC1C5DAD3800C6EC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				C3CD4CF81C64729600B12173 /* DummyData.swift */,
+				C30AFE0B1CC727C70066C5A0 /* BookData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				C3B116AB1CB331E000D75CB2 /* ShadowNoteView.swift */,
 				C3E4861E1CB35BED00E0F5A8 /* TimerCornerView.swift */,
 				C3B3B8F01CB6174400CA134D /* CategoryPopoverViewController.swift */,
+				C30404DA1CBDD41400BF4F3E /* MainPageButtonEffects.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38B791C1CA22661000D2222 /* MainPageViewController.swift in Sources */,
+				C30404DB1CBDD41400BF4F3E /* MainPageButtonEffects.swift in Sources */,
 				C301C6981C60564B00B247F6 /* ShadowColors.swift in Sources */,
 				C3F8C1611CA62FB8006310E8 /* AddBookViewController.swift in Sources */,
 				C31BF8871CAF764300E318F5 /* MainBookTableViewCell.swift in Sources */,
@@ -398,6 +405,7 @@
 				C3FA6D8A1CA9CF1100B4D276 /* NoteViewController.swift in Sources */,
 				C3FA6D881CA9CED200B4D276 /* AddNoteViewController.swift in Sources */,
 				C3B116A81CB32FCB00D75CB2 /* RoundedCorners.swift in Sources */,
+				C30AFE0C1CC727C70066C5A0 /* BookData.swift in Sources */,
 				C3B116AA1CB3307D00D75CB2 /* ShadowTableViewCell.swift in Sources */,
 				C3FA6D8C1CA9CF4400B4D276 /* NoteSettingsViewController.swift in Sources */,
 				C3BE49411C7121B1003225B4 /* TimerViewController.swift in Sources */,

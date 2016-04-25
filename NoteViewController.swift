@@ -10,7 +10,10 @@ import UIKit
 
 class NoteViewController: UIViewController {
 
-    @IBOutlet weak var saveNoteBarButton: UIBarButtonItem!
+    
+    @IBAction func saveButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBOutlet weak var noteTitleLabel: UILabel!
     @IBOutlet weak var reviewNoteTextView: UITextView!

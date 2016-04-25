@@ -23,33 +23,36 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o6n-Zu-VM9">
                                         <rect key="frame" x="8" y="8" width="544" height="293"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwR-Rf-nDU">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwR-Rf-nDU" customClass="MainPageButtonEffects" customModule="Oras_BookPlanner" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="544" height="67"/>
                                                 <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Go To Book List">
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Your Book List">
                                                     <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="DBB-ZZ-rli" kind="show" id="hnv-fG-UoC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-B7-lza">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-B7-lza" customClass="MainPageButtonEffects" customModule="Oras_BookPlanner" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="75" width="544" height="68"/>
                                                 <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Go to Quick Timer">
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Quick Read">
                                                     <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-IM-wdH">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-IM-wdH" customClass="MainPageButtonEffects" customModule="Oras_BookPlanner" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="151" width="544" height="67"/>
                                                 <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Continue Reading: Last Book Read">
                                                     <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-CL-jg3">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-CL-jg3" customClass="MainPageButtonEffects" customModule="Oras_BookPlanner" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="226" width="544" height="67"/>
                                                 <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.69557643579999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Continue Reading: Second to Last Book">
                                                     <color key="titleColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -57,7 +60,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="o6n-Zu-VM9" firstAttribute="top" secondItem="GNO-rc-4ae" secondAttribute="top" constant="8" id="7qV-3O-1dN"/>
                                     <constraint firstItem="o6n-Zu-VM9" firstAttribute="leading" secondItem="GNO-rc-4ae" secondAttribute="leading" constant="8" id="Ces-UE-hvf"/>
@@ -239,20 +242,25 @@
                                 <action selector="categorySelect:" destination="Kdx-LP-hEW" id="ng1-QF-7Ok"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="dLi-Sr-XTa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="dLi-Sr-XTa">
+                            <connections>
+                                <action selector="saveTime:" destination="Kdx-LP-hEW" id="rRb-6t-Znu"/>
+                                <segue destination="JVH-Ic-nW1" kind="unwind" unwindAction="unwindTimerSave:" id="h4l-T6-oWA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="buttonTogggleFifteenAdd" destination="XKT-IV-uNv" id="TLL-Ya-5oT"/>
                         <outlet property="buttonToggleThirtyEdit" destination="YRn-yU-rMQ" id="p3r-Dc-3vP"/>
                         <outlet property="hourLabel" destination="uDY-RK-c4k" id="Gu7-1Z-Opw"/>
                         <outlet property="minuteLabel" destination="8mx-mh-pcQ" id="BAm-Vi-jH5"/>
-                        <outlet property="saveTime" destination="dLi-Sr-XTa" id="LuE-XV-vWX"/>
                         <outlet property="secondsLabel" destination="ix0-Gy-MTs" id="mCD-Jm-IHY"/>
                         <outlet property="startSaveButton" destination="zF8-Cd-2wF" id="oXe-4C-hmq"/>
                         <outlet property="stopResetButton" destination="1o4-FE-t86" id="eeQ-35-rYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K95-nZ-pKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JVH-Ic-nW1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="986" y="1937"/>
         </scene>
@@ -374,10 +382,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Books" id="thI-hK-xwC">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="Thl-1R-ezw"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="Thl-1R-ezw">
+                            <connections>
+                                <action selector="editButton:" destination="LjU-zO-F9V" id="riB-Wy-37u"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="g4h-pU-2Ik">
                             <connections>
-                                <segue destination="L85-9y-Umk" kind="show" id="PHp-DV-ed2"/>
+                                <segue destination="L85-9y-Umk" kind="show" identifier="" id="PHp-DV-ed2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -389,7 +401,7 @@
             </objects>
             <point key="canvasLocation" x="-460" y="1937"/>
         </scene>
-        <!--New Book-->
+        <!--Title-->
         <scene sceneID="L2z-Us-35H">
             <objects>
                 <viewController id="L85-9y-Umk" customClass="AddBookViewController" customModule="Oras_BookPlanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -441,120 +453,20 @@
                                     <constraint firstAttribute="height" constant="47" id="xZk-BV-fKp"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="efP-FB-A2d">
-                                <rect key="frame" x="20" y="186" width="230" height="49"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ori-xb-uGK">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="49"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuD-q5-oJ7">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDT-wM-b89">
-                                                <rect key="frame" x="0.0" y="19" width="100" height="30"/>
-                                                <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="0.89764569260000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="hhz-PL-KNe"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fQY-cb-OQc">
-                                        <rect key="frame" x="130" y="0.0" width="100" height="49"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ending Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-XF-azb">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCF-BC-FxZ">
-                                                <rect key="frame" x="0.0" y="19" width="100" height="30"/>
-                                                <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="0.89764569260000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="Fo4-uI-IX2"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Book Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNw-K7-JtX">
+                                <rect key="frame" x="20" y="184" width="560" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="8yq-K8-ycX"/>
+                                    <constraint firstAttribute="height" constant="17" id="2Zb-X1-epr"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TYx-NA-6gb">
-                                <rect key="frame" x="20" y="245" width="230" height="68"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Time to Finish the Book" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-Hg-f3x">
-                                        <rect key="frame" x="0.0" y="0.0" width="215" height="17"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qRB-eW-55k">
-                                        <rect key="frame" x="0.0" y="19" width="230" height="49"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="A0d-MU-zUf">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="49"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-fx-vgd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                        <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wP3-km-z4Q">
-                                                        <rect key="frame" x="0.0" y="19" width="100" height="30"/>
-                                                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="0.89764569260000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="VxD-pc-jmk"/>
-                                                    <constraint firstAttribute="height" constant="49" id="fPA-e7-sSv"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7TZ-A3-e0S">
-                                                <rect key="frame" x="130" y="0.0" width="100" height="49"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSz-DI-IqQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                        <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVf-Dh-OUY">
-                                                        <rect key="frame" x="0.0" y="19" width="100" height="30"/>
-                                                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="0.89764569260000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="49" id="5an-2Z-69n"/>
-                                                    <constraint firstAttribute="width" constant="100" id="QfJ-pV-dRv"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="hvV-Te-Tgl"/>
-                                </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogM-H0-sF0">
-                                <rect key="frame" x="20" y="323" width="560" height="98"/>
+                                <rect key="frame" x="20" y="201" width="560" height="98"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="0.89764569260000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="B2s-KO-tNV"/>
+                                    <constraint firstAttribute="height" constant="98" id="L7e-Qj-lsz"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="L85-9y-Umk" id="TRU-0x-0UJ"/>
@@ -562,16 +474,16 @@
                                 </connections>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fqU-An-SFm">
-                                <rect key="frame" x="20" y="429" width="560" height="114"/>
+                                <rect key="frame" x="20" y="307" width="560" height="236"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals/Notes for the Book" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cES-sX-rOP">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Goals/Notes for the Book" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cES-sX-rOP">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="1" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AXz-Fh-ObH">
-                                        <rect key="frame" x="0.0" y="19" width="560" height="95"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AXz-Fh-ObH">
+                                        <rect key="frame" x="0.0" y="2" width="560" height="234"/>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="0.89764569260000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -582,43 +494,41 @@
                         <color key="backgroundColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OjQ-w9-eYh" firstAttribute="top" secondItem="5NF-a3-7RY" secondAttribute="bottom" constant="8" id="0Lk-Dk-K1H"/>
+                            <constraint firstAttribute="trailing" secondItem="ogM-H0-sF0" secondAttribute="trailing" constant="20" id="0qS-9G-Qjj"/>
                             <constraint firstAttribute="trailing" secondItem="fUF-q2-d9p" secondAttribute="trailing" constant="20" id="2qm-Or-ToB"/>
-                            <constraint firstItem="TYx-NA-6gb" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="4nK-YU-tzW"/>
-                            <constraint firstItem="fqU-An-SFm" firstAttribute="top" secondItem="ogM-H0-sF0" secondAttribute="bottom" constant="8" id="6Ta-D8-mRS"/>
+                            <constraint firstAttribute="trailing" secondItem="fqU-An-SFm" secondAttribute="trailing" constant="20" id="4T3-vu-HSc"/>
                             <constraint firstItem="OjQ-w9-eYh" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="93E-Fh-MsQ"/>
-                            <constraint firstItem="ogM-H0-sF0" firstAttribute="top" secondItem="TYx-NA-6gb" secondAttribute="bottom" constant="10" id="CSK-3a-CoP"/>
-                            <constraint firstItem="IUB-IW-lO1" firstAttribute="top" secondItem="fqU-An-SFm" secondAttribute="bottom" constant="8" id="OF8-N4-YxI"/>
-                            <constraint firstItem="fqU-An-SFm" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="Zc0-Um-rcg"/>
-                            <constraint firstItem="TYx-NA-6gb" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="bGK-Ni-Tbr"/>
+                            <constraint firstItem="ogM-H0-sF0" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="GPi-Gv-CWT"/>
+                            <constraint firstAttribute="trailing" secondItem="fNw-K7-JtX" secondAttribute="trailing" constant="20" id="Slo-Uu-Epg"/>
+                            <constraint firstItem="fqU-An-SFm" firstAttribute="top" secondItem="ogM-H0-sF0" secondAttribute="bottom" constant="8" id="U5L-O6-5eE"/>
+                            <constraint firstItem="ogM-H0-sF0" firstAttribute="top" secondItem="fNw-K7-JtX" secondAttribute="bottom" id="WZU-Zj-Ylj"/>
+                            <constraint firstItem="fNw-K7-JtX" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="YVV-s8-eBV"/>
                             <constraint firstItem="fUF-q2-d9p" firstAttribute="top" secondItem="OjQ-w9-eYh" secondAttribute="bottom" constant="10" id="bgk-3h-jox"/>
-                            <constraint firstAttribute="trailing" secondItem="ogM-H0-sF0" secondAttribute="trailing" constant="20" id="blF-nj-fOI"/>
                             <constraint firstAttribute="trailing" secondItem="OjQ-w9-eYh" secondAttribute="trailing" constant="20" id="dIL-rl-weD"/>
-                            <constraint firstItem="efP-FB-A2d" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="efe-Ex-Tes"/>
-                            <constraint firstItem="efP-FB-A2d" firstAttribute="top" secondItem="fUF-q2-d9p" secondAttribute="bottom" constant="10" id="h2i-Iv-iAh"/>
-                            <constraint firstItem="TYx-NA-6gb" firstAttribute="top" secondItem="efP-FB-A2d" secondAttribute="bottom" constant="10" id="qqJ-1X-2S6"/>
-                            <constraint firstItem="ogM-H0-sF0" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="tws-qs-LDn"/>
+                            <constraint firstItem="IUB-IW-lO1" firstAttribute="top" secondItem="fqU-An-SFm" secondAttribute="bottom" constant="8" id="onE-9X-Z32"/>
+                            <constraint firstItem="fNw-K7-JtX" firstAttribute="top" secondItem="fUF-q2-d9p" secondAttribute="bottom" constant="8" id="thj-bI-8eo"/>
+                            <constraint firstItem="fqU-An-SFm" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="vI4-UR-ZhI"/>
                             <constraint firstItem="fUF-q2-d9p" firstAttribute="leading" secondItem="imV-RU-qiZ" secondAttribute="leading" constant="20" id="woO-W0-hv5"/>
-                            <constraint firstAttribute="trailing" secondItem="fqU-An-SFm" secondAttribute="trailing" constant="20" id="ymb-mq-zHX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New Book" id="07D-el-zo7">
-                        <barButtonItem key="rightBarButtonItem" title="Add Book" id="WFX-Su-rn4"/>
+                    <navigationItem key="navigationItem" title="Title" id="R4l-wS-L3v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Kwx-e8-6SX">
+                            <connections>
+                                <segue destination="iiQ-d7-XYO" kind="unwind" identifier="saveAddBookData" unwindAction="saveAddBookData:" id="HiD-67-Ium"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addBookButton" destination="WFX-Su-rn4" id="Aly-sb-kL4"/>
-                        <outlet property="author" destination="Cvb-Rm-1Ex" id="Y1P-wl-WiA"/>
+                        <outlet property="author" destination="Cvb-Rm-1Ex" id="pMW-jY-SuH"/>
                         <outlet property="bookCategory" destination="ogM-H0-sF0" id="z46-g3-uqv"/>
-                        <outlet property="bookNotesStart" destination="AXz-Fh-ObH" id="dN0-nZ-VT7"/>
-                        <outlet property="endingPageExpected" destination="uCF-BC-FxZ" id="jl7-he-or6"/>
-                        <outlet property="hoursExpected" destination="wP3-km-z4Q" id="IkB-Vc-xzM"/>
-                        <outlet property="minutesExpected" destination="CVf-Dh-OUY" id="LCv-zp-tx4"/>
-                        <outlet property="nameOfBook" destination="7HO-oX-97m" id="oQP-Mb-qD5"/>
-                        <outlet property="startingPage" destination="DDT-wM-b89" id="1d7-lJ-gYP"/>
+                        <outlet property="bookNotesStart" destination="AXz-Fh-ObH" id="dwn-XD-yKh"/>
+                        <outlet property="nameOfBook" destination="7HO-oX-97m" id="iT0-k1-oH2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnS-f6-qxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iiQ-d7-XYO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="252" y="1937"/>
+            <point key="canvasLocation" x="299" y="1922"/>
         </scene>
         <!--Activity-->
         <scene sceneID="1aN-Xv-V9Q">
@@ -991,14 +901,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oqX-vH-z5W">
                                 <rect key="frame" x="8" y="174" width="584" height="382"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Og-t5z">
-                                        <rect key="frame" x="0.0" y="0.0" width="584" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Note Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Og-t5z">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.32941176470588235" green="0.43137254901960786" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Sz-j8W">
-                                        <rect key="frame" x="0.0" y="17" width="584" height="365"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Sz-j8W">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="382"/>
                                         <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1022,10 +932,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Note" id="t8y-Uz-Ycr">
-                        <barButtonItem key="rightBarButtonItem" title="Start" id="Y0U-SG-BXc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="Y0U-SG-BXc">
+                            <connections>
+                                <segue destination="JhR-Ae-PL6" kind="unwind" unwindAction="unwindStartNoteToVC:" id="rEc-cP-NNg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addNotesTextView" destination="6jr-Sz-j8W" id="bBC-7N-vdd"/>
+                        <outlet property="recordTimeSwitch" destination="ZCb-58-Ihw" id="lt1-hg-AeB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0U-D2-dnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JhR-Ae-PL6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="252" y="2682"/>
         </scene>
@@ -1084,10 +1003,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o5L-44-nLQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="x9i-cR-Du3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="x9i-cR-Du3">
+                            <connections>
+                                <action selector="saveButton:" destination="09S-4g-zKS" id="LCI-AW-AjX"/>
+                                <segue destination="3fZ-c9-YBK" kind="unwind" unwindAction="unwindNoteToVC:" id="aiK-iB-50u"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="noteTitleLabel" destination="x5u-2U-lEn" id="JIw-S2-KIy"/>
+                        <outlet property="reviewNoteTextView" destination="kg9-et-715" id="Yto-SU-99I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWz-d9-wDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3fZ-c9-YBK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-466" y="3462"/>
         </scene>
@@ -1280,7 +1209,7 @@
                     <connections>
                         <segue destination="Jyr-8A-pez" kind="relationship" relationship="viewControllers" id="ee0-dp-CGG"/>
                         <segue destination="8KF-zj-7lu" kind="relationship" relationship="viewControllers" id="WAw-Nz-vgK"/>
-                        <segue destination="yXs-uo-xbW" kind="relationship" relationship="viewControllers" id="MvL-g7-mp1"/>
+                        <segue destination="IPt-A1-YXa" kind="relationship" relationship="viewControllers" id="MLn-Uw-vDM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMb-ic-Xy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1306,11 +1235,11 @@
             </objects>
             <point key="canvasLocation" x="-460" y="1197"/>
         </scene>
-        <!--Add New-->
+        <!--Quick Timer-->
         <scene sceneID="S2O-mm-PKr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8KF-zj-7lu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add New" id="tHl-Q3-brd"/>
+                    <tabBarItem key="tabBarItem" title="Quick Timer" id="tHl-Q3-brd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a1Y-ue-Ikd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1325,21 +1254,53 @@
             </objects>
             <point key="canvasLocation" x="986" y="1197"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="teK-YO-hy4">
+        <!--Settings Table View Controller-->
+        <scene sceneID="6YZ-4C-z8m">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXs-uo-xbW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="6H7-IK-lVI"/>
+                <tableViewController id="BVH-Kb-OAp" customClass="SettingsTableViewController" customModule="Oras_BookPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="573" sectionHeaderHeight="28" sectionFooterHeight="28" id="wHI-eY-tgr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" rowHeight="573" id="TiB-d2-wPV">
+                                <rect key="frame" x="0.0" y="92" width="600" height="573"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TiB-d2-wPV" id="iyb-5V-8Tf">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="572"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BVH-Kb-OAp" id="hlp-2a-Z47"/>
+                            <outlet property="delegate" destination="BVH-Kb-OAp" id="SFM-xK-VLI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3To-Gk-RTn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdE-k2-z1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467" y="2013"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="H7S-A5-Y4z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IPt-A1-YXa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="OiJ-cf-aRe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L7p-ZW-GyG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A9t-yh-Ou1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BVH-Kb-OAp" kind="relationship" relationship="rootViewController" id="bwM-PP-1Xe"/>
+                    </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OA8-tf-MkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdA-ag-bl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679" y="1197"/>
+            <point key="canvasLocation" x="1627" y="1087"/>
         </scene>
     </scenes>
 </document>

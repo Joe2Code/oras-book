@@ -9,25 +9,45 @@
 import UIKit
 
 class AddBookViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var bookData: BoundBook?
 
     @IBOutlet weak var bookCategory: UIPickerView!
     
-    @IBOutlet weak var addBookButton: UIBarButtonItem!
+    @IBAction func addBookButtonPressed(sender: AnyObject) {
+            }
+    
     @IBOutlet weak var nameOfBook: UITextField!
     @IBOutlet weak var author: UITextField!
-    @IBOutlet weak var startingPage: UITextField!
-    @IBOutlet weak var endingPageExpected: UITextField!
-    @IBOutlet weak var hoursExpected: UITextField!
-    @IBOutlet weak var minutesExpected: UITextField!
     @IBOutlet weak var bookNotesStart: UITextView!
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("1")
+        if (segue.identifier == "saveAddBookData") {
+            print("2")
+            bookData = BoundBook(bookTitle: nameOfBook.text ,bookAuthor: author.text, bookCategory: pickerDataSource.description, noteNumber: 0, bookPagesRead: 0, bookHoursRead: 0, bookMinutesRead: 0, bookSecondsRead: 0)
+            BookData.append(bookData!)
+            print(BookData.count)
+            print("Test")
+           // var vC = segue.destinationViewController as? MainBookViewController
+            // var addBookData : DummyData
+           // addBookData =
+           // vC?.books = addBookData.bookTitle
+            // vC!.books = nameOfBook.text
+            // DummyData(bookTitle: nameOfBook.text, noteNumber: 0, totalTimeRead: 0)
+        }
+    }
     
-    var pickerDataSource = ["Pick a Reading Category", "Casual Reading", "Academic", "Coffee Reading", "Group Reading", "Religious", "Non-Fiction", "Fiction", "Work Reading", "Other"]
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bookCategory.dataSource = self
         self.bookCategory.delegate = self
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -38,7 +58,7 @@ class AddBookViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         return pickerDataSource.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerViewTest(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataSource[row]
     }
     
@@ -57,5 +77,5 @@ class AddBookViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
